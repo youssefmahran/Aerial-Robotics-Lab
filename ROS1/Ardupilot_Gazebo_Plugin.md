@@ -1,5 +1,6 @@
 # Installing Ardupilot Gazebo
 ## 1. Make Sure Gazebo is Installed
+Open a new terminal using `CTRL` + `ALT` + `T` or from the applications pane and run the following command
 ```
 sudo apt install ros-noetic-gazebo-ros ros-noetic-gazebo-plugins
 ```
@@ -60,7 +61,9 @@ gedit ~/gaz.sh
 
 In gedit add the following lines
 ```
-lipsum
+#!/bin/bash
+pkill gzserver
+gazebo --verbose ~/ardupilot_gazebo/worlds/iris_arducopter_runway.world
 ```
 Save the file and close
 
@@ -79,7 +82,8 @@ gedit ~/sitl.sh
 
 In gedit add the following lines
 ```
-lipsum
+#!/bin/bash
+cd ~/ardupilot/ArduCopter/ && sim_vehicle.py -v ArduCopter -f gazebo-iris --console
 ```
 Save the file and close
 
