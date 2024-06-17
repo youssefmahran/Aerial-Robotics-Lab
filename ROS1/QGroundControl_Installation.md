@@ -39,7 +39,7 @@ gedit ~/qgc.sh
 
 In gedit add the following lines
 ```
-lipsum
+cd ~
 ```
 Save the file and close
 

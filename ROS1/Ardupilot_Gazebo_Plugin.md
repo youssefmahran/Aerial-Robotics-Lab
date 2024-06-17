@@ -58,6 +58,7 @@ Save the file and close
 In the terminal run make the script executable
 ```
 chmod +x ./gaz.sh
+```
 
 Create a script to launch ArduPilot SITL.
 
