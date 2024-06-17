@@ -40,6 +40,15 @@ cd ~/ardupilot/ArduCopter/
 sim_vehicle.py -v ArduCopter -f gazebo-iris --console
 ```
 
+In the SITL terminal (SITL) wait for the `EK3 is using GPS1` message then run
+```
+mode GUIDED
+arm throttle
+takeoff 3
+```
+
+You can see that the drone is taking off in Gazebo
+
 ## 6. Launch Script
 For ease of use and shorter launch command create a script to launch Gazebo.
 
