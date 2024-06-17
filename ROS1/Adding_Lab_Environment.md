@@ -1,6 +1,6 @@
 # Adding Aerial Robotics Lab Environment to Gazebo
 ## 1. Download Needed File
-Download the [`Lab.zip`](Lab.zip) File
+Download the [`Lab.zip`](CPS-LAB/Lab.zip) File
 
 Open a new terminal using `CTRL` + `ALT` + `T` or from the applications pane and run this command
 ```
