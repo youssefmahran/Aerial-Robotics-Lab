@@ -55,7 +55,7 @@ lipsum
 ```
 Save the file and close
 
-In the terminal run make the script executable
+In the terminal make the script executable
 ```
 chmod +x ./gaz.sh
 ```
@@ -74,7 +74,7 @@ lipsum
 ```
 Save the file and close
 
-In the terminal run make the script executable
+In the terminal make the script executable
 ```
 chmod +x ./sitl.sh
 ```
