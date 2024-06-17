@@ -1,22 +1,56 @@
-# Installing QGroundControl
-Before installing QGroundControl you should remove the modem manager and grant yourself permissions to access the serial port. You also need to install GStreamer in order to support video streaming.
-
+# Installing Ardupilot SITL
 Open a new terminal using `CTRL` + `ALT` + `T` or from the applications pane and
-run te=he following commands
-```
-sudo usermod -a -G dialout $USER
-sudo apt-get remove modemmanager -y
-sudo apt install gstreamer1.0-plugins-bad gstreamer1.0-libav gstreamer1.0-gl -y
-sudo apt install libfuse2 -y
-sudo apt install libxcb-xinerama0 libxkbcommon-x11-0 libxcb-cursor0 -y
-``` 
-Logout from ubuntu and login again to enable the changes
-
-Download [QGroundControl](https://docs.qgroundcontrol.com/master/en/qgc-user-guide/getting_started/download_and_install.html) from the QGroundControl website
-
-Copy the installed file to the home directory then run the following commands in the terminal
+install git to be able to clone the ardupilot repo
 ```
 cd ~    #Go to home Directory
-chmod +x ./QGroundControl.AppImage  #Make the file executable
-./QGroundControl.AppImage  (or double click)    #Run QgroundControl
+sudo apt install git    #Install git 
 ``` 
+
+
+Clone the Ardupilot repo in the home directory. To check the latest version of Arducopter visit [Arducopter](https://firmware.ardupilot.org/Copter/) and find the latest version.
+```
+cd ~    #Go to home Directory
+git clone https://github.com/ArduPilot/ardupilot.git    #Clone the repo
+cd ardupilot    #Go to ardupilot directory
+git checkout Copter-<Latest Version>    #For example Copter-4.5.1
+git submodule update --init --recursive
+``` 
+
+
+Install the needed dependecies
+```
+sudo apt install python3-matplotlib python3-serial python-wxgtk3.0 python-wxtools python3-lxml python3-scipy python3-opencv ccache gawk python3-pip python3-pexpect python-is-python3
+```
+
+
+Use pip (python package installer) to install mavproxy
+```
+sudo pip install future pymavlink MAVProxy
+```
+
+
+Open ~/.bashrc to edit it
+```
+gedit ~/.bashrc
+```
+
+
+Add the following lines at the end of the ~/.bashrc file
+```
+export PATH=$PATH:$HOME/ardupilot/Tools/autotest
+export PATH=/usr/lib/ccache:$PATH
+```
+Save and close the editor
+
+
+Source ~/.bashrc by running this in the terminal
+```
+.~/.bashrc
+```
+
+
+Run the SITL (Software In The Loop) once to set params:
+```
+cd ~/ardupilot/ArduCopter
+sim_vehicle.py -w
+```
