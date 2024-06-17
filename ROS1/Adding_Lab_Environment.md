@@ -12,7 +12,7 @@ unzip Lab.zip -d ~/Downloads
 Run the following Commands
 ```
 mkdir ~/.gazebo/models/GLab
-mkdir ~/.gazebo/models/Glab/meshes
+mkdir ~/.gazebo/models/GLab/meshes
 cd ~/Downloads
 mv model.config model.sdf ~/.gazebo/models/GLab
 mv model.dae ~/.gazebo/models/GLab/meshes
