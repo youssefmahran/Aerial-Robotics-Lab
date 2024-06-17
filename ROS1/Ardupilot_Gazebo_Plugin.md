@@ -40,7 +40,7 @@ cd ~/ardupilot/ArduCopter/
 sim_vehicle.py -v ArduCopter -f gazebo-iris --console
 ```
 
-In the SITL terminal (SITL) wait for the `EK3 is using GPS1` message then run
+In the SITL terminal (Terminal 2) wait for the `EK3 is using GPS1` message then run
 ```
 mode GUIDED
 arm throttle
