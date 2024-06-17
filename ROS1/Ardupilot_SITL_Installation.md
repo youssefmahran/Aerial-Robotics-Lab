@@ -30,13 +30,13 @@ sudo pip install future pymavlink MAVProxy
 ```
 
 ## Edit bashrc
-Open ~/.bashrc to edit it
+Open `~/.bashrc` to edit it
 ```
 gedit ~/.bashrc
 ```
 
 
-Add the following lines at the end of the ~/.bashrc file
+Add the following lines at the end of the `~/.bashrc` file
 ```
 export PATH=$PATH:$HOME/ardupilot/Tools/autotest
 export PATH=/usr/lib/ccache:$PATH
@@ -44,7 +44,7 @@ export PATH=/usr/lib/ccache:$PATH
 Save and close the editor
 
 
-Source ~/.bashrc by running this in the terminal
+Source `~/.bashrc` by running this in the terminal
 ```
 .~/.bashrc
 ```

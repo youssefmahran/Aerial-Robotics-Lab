@@ -1,4 +1,5 @@
 # Installing QGroundControl
+## 1. Configuring Ubuntu
 Before installing QGroundControl you should remove the modem manager and grant yourself permissions to access the serial port. You also need to install GStreamer in order to support video streaming.
 
 Open a new terminal using `CTRL` + `ALT` + `T` or from the applications pane and
@@ -21,8 +22,33 @@ chmod +x ./QGroundControl.AppImage  #Make the file executable
 ./QGroundControl.AppImage  (or double click)    #Run QgroundControl
 ``` 
 
-## Run SITL and connect with QGroundControl
+## 2. Run SITL and connect with QGroundControl
 ```
 cd ~/ardupilot/ArduCopter
 sim_vehicle.py -w
+```
+
+## 3. Launch Script
+For ease of use and shorter launch command create a script to launch QGC.
+
+Open gedit to edit `qgc.sh`
+```
+cd ~
+gedit ~/qgc.sh
+```
+
+In gedit add the following lines
+```
+lipsum
+```
+Save the file and close
+
+In the terminal run make the script executable
+```
+chmod +x ./qgc.sh
+```
+
+Launch QGC from the script by running the following command
+```
+./qgc.sh
 ```

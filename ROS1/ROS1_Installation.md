@@ -63,7 +63,7 @@ catkin_make
 ```
 
 ## 8. Installing Catkin Dependencies
-Install [`mavros`] and [`mavlink`]
+Install `mavros` and `mavlink`
 ```
 cd ~/catkin_ws
 wstool init ~/catkin_ws/src
@@ -75,12 +75,12 @@ rosdep install --from-paths src --ignore-src --rosdistro `echo $ROS_DISTRO` -y
 catkin_make
 ```
 
-Edit [`~/.bashrc`]
+Edit `~/.bashrc`
 ```
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 ```
 
-Source [`~/.bashrc`]
+Source `~/.bashrc`
 ```
 source ~/.bashrc
 ```
