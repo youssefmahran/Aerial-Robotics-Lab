@@ -2,7 +2,7 @@
 Before installing QGroundControl you should remove the modem manager and grant yourself permissions to access the serial port. You also need to install GStreamer in order to support video streaming.
 
 Open a new terminal using `CTRL` + `ALT` + `T` or from the applications pane and
-run te=he following commands
+run the following commands
 ```
 sudo usermod -a -G dialout $USER
 sudo apt-get remove modemmanager -y
@@ -20,3 +20,9 @@ cd ~    #Go to home Directory
 chmod +x ./QGroundControl.AppImage  #Make the file executable
 ./QGroundControl.AppImage  (or double click)    #Run QgroundControl
 ``` 
+
+## Run SITL and connect with QGroundControl
+```
+cd ~/ardupilot/ArduCopter
+sim_vehicle.py -w
+```
