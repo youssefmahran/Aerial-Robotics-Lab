@@ -14,6 +14,7 @@ sudo bash ./install_geographiclib_datasets.sh
 Install `mavlink`
 ```bash
 git clone https://github.com/mavlink/mavlink.git --recursive
+cd mavlink
 python3 -m pip install -r pymavlink/requirements.txt
 ```
 
