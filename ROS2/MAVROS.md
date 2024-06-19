@@ -1,5 +1,24 @@
 # Using MAVROS
-## 1. Creating apm.launch File
+## 1. Installing MAVROS and MAVLink
+Install `mavros`
+```bash
+sudo apt install ros-noetic-mavros ros-noetic-mavros-extras ros-noetic-mavros-msgs
+```
+
+Install geographiclib dependancy
+```bash
+wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
+sudo bash ./install_geographiclib_datasets.sh
+```
+
+Install `mavlink`
+```bash
+git clone https://github.com/mavlink/mavlink.git --recursive
+cd mavlink
+python3 -m pip install -r pymavlink/requirements.txt
+```
+
+## 2. Creating apm.launch File
 Open a new terminal using `CTRL` + `ALT` + `T` or from the applications pane and create a launch folder
 ```bash
 cd ~
