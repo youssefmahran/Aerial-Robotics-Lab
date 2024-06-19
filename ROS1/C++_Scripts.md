@@ -50,6 +50,15 @@ add_executable(circle src/circle.cpp)
 target_link_libraries(circle ${catkin_LIBRARIES})
 ```
 
+Do the same for the `helix.cpp` and `square.cpp`
+```
+add_executable(helix src/helix.cpp)
+target_link_libraries(helix ${catkin_LIBRARIES})
+
+add_executable(square src/square.cpp)
+target_link_libraries(square ${catkin_LIBRARIES})
+```
+
 Repeat this step for every C++ script you add to the `~/catkin_ws/src/code/src` folder. However, the two lines added should be edited as follows
 ```
 add_executable(<executable name> src/<file name>.cpp)
@@ -80,6 +89,14 @@ After the `EK3 is using GPS` message appears run the C++ script
 ```bash
 rosrun code circle
 ```
+OR
+```bash
+rosrun code helix
+```
+OR
+```bash
+rosrun code square
+```
 
 You will see the drone being armed, taking off and flying in a circle all autonmously
 
@@ -87,4 +104,28 @@ The format for running the script
 ```bash
 rosrun <package name> <executable name>
 ```
-The `<package name>` is `code` as we created in the first step while the `<executable name>` is the name of the executable you set in the 4th step.
+The `<package name>` is `code` as we created in the first step while the `<executable name>` is the name of the executable you set in the previous step.
+
+## 6. Writing Your Own Scripts
+In the [C++ scripts](Example_Codes/C++) folder you will find 3 scripts fully written with line-by-line explanation for each line
+
+Use these scripts as a guide to write your own script
+
+After writing your script move it to the `~/catkin_ws/src/code/src` folder
+
+Then add the following two lines to the end of the `CMakeLists.txt` found in`~/catkin_ws/src/code/`
+```
+add_executable(<executable name> src/<file name>.cpp)
+target_link_libraries(<executable name> ${catkin_LIBRARIES})
+```
+
+Build the workspace (NOTE you have to `catkin_make` every time you do any change to your C++ scripts. If you don't `catkin_make` the changes you do in your script won't appear)
+```bash
+cd ~/catkin_ws
+catkin_make
+```
+
+Finally, run your script
+```bash
+rosrun <package name> <executable name>
+```
