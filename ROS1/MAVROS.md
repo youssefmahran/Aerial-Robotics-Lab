@@ -68,7 +68,7 @@ cd ~/launch
 roslaunch apm.launch
 ```
 
-Now MAVROS is publishing the topic needed for us to control the quadcopter autonomously from C++ or Python scripts
+Now MAVROS is publishing the topics needed for us to control the quadcopter autonomously from C++ or Python scripts
 
 To see the available topics, in a fourth terminal list the topics
 ```bash
@@ -77,7 +77,7 @@ rostopic list
 
 You can see all the topics that are being published through MAVROS
 
-To see the messages that are being published to a certain topic (ex: local position) echo the topic
+To see the messages that are being published to a certain topic (ex: local position), echo the topic
 ```bash
 rostopic echo /mavros/local_position/pose
 ```
