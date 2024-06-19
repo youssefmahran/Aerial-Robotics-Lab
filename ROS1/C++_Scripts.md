@@ -20,7 +20,7 @@ catkin_make
 
 To add the workspace to your ROS environment you need to source the generated setup file
 ```bash
-. ~/catkin_ws/devel/setup.bas
+. ~/catkin_ws/devel/setup.bash
 ```
 
 ## 3. Adding C++ Scripts
