@@ -3,14 +3,15 @@
 Download the [`Lab.zip`](Lab.zip) File
 
 Open a new terminal using `CTRL` + `ALT` + `T` or from the applications pane and run this command
-```
+```bash
+cd ~
 sudo apt install unzip
 unzip Lab.zip -d ~/Downloads
 ```
 
 ## 2. Move the Files
 Run the following Commands
-```
+```bash
 mkdir ~/.gazebo/models/GLab
 mkdir ~/.gazebo/models/GLab/meshes
 cd ~/Downloads
@@ -21,23 +22,23 @@ mv Lab.world ~/ardupilot_gazebo/worlds
 
 ## 3. Run the Simulation
 Edit the `gaz.sh` script
-```
+```bash
 cd ~
 gedit gaz.sh
 ```
 
 Replace the `iris_arducopter_runway.world` with `Lab.world` in the 3rd line
-```
+```bash
 gazebo --verbose ~/ardupilot_gazebo/worlds/Lab.world
 ```
 
 In one terminal launch gazebo
-```
+```bash
 ./gaz.sh
 ```
 
 In another terminal launch the ArduPilot SITL
-```
+```bash
 ./sitl.sh
 ```
 
