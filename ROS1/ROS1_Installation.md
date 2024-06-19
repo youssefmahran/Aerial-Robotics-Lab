@@ -59,7 +59,7 @@ Initialize the catkin workspace
 ```bash
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws
-catkin_make
+catkin build
 ```
 
 Edit `~/.bashrc`
@@ -83,7 +83,7 @@ rosinstall_generator mavlink | tee -a /tmp/mavros.rosinstall
 wstool merge -t src /tmp/mavros.rosinstall
 wstool update -t src
 rosdep install --from-paths src --ignore-src --rosdistro `echo $ROS_DISTRO` -y
-catkin_make
+catkin build
 ```
 
 Install geographiclib dependancy
@@ -94,5 +94,5 @@ sudo ~/catkin_ws/src/mavros/mavros/scripts/install_geographiclib_datasets.sh
 Build the workspace
 ```bash
 cd ~/catkin_ws
-catkin_make
+catkin build
 ```
