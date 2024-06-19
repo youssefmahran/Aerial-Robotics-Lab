@@ -58,8 +58,8 @@ pip3 install osrf-pycommon
 Initialize the catkin workspace
 ```bash
 mkdir -p ~/catkin_ws/src
-cd ~/catkin_ws
-catkin init
+cd ~/catkin_ws/
+catkin_make
 ```
 
 Edit `~/.bashrc`
@@ -71,28 +71,4 @@ echo $ROS_PACKAGE_PATH /home/<youruser>/catkin_ws/src:/opt/ros/noetic/share
 Source `~/.bashrc`
 ```bash
 source ~/.bashrc
-```
-
-## 8. Installing Catkin Dependencies
-Install `mavros` and `mavlink`
-```bash
-cd ~/catkin_ws
-wstool init ~/catkin_ws/src
-rosinstall_generator --upstream mavros | tee /tmp/mavros.rosinstall
-rosinstall_generator mavlink | tee -a /tmp/mavros.rosinstall
-wstool merge -t src /tmp/mavros.rosinstall
-wstool update -t src
-rosdep install --from-paths src --ignore-src --rosdistro `echo $ROS_DISTRO` -y
-catkin build
-```
-
-Install geographiclib dependancy
-```bash
-sudo ~/catkin_ws/src/mavros/mavros/scripts/install_geographiclib_datasets.sh
-```
-
-Build the workspace
-```bash
-cd ~/catkin_ws
-catkin build
 ```
