@@ -62,3 +62,7 @@
 
 <img src="Photos/6.jpg" alt="Example Image" width="576" height="432">
 
+- Create a swap area as a logical partition at the beginning of this space as shown. The swap size is at least half the RAM size. So for an 8GB RAM the minimum is 4GB and maximum is 16GB 
+
+<img src="Photos/6.jpg" alt="Example Image" width="576" height="432">
+
