@@ -1,4 +1,4 @@
-# Using MAVROS
+# Running C++ Scripts
 ## 1. Creating a catkin Package
 Open a new terminal using `CTRL` + `ALT` + `T` or from the applications pane and go to the catkin workspace created in [ROS Installation](ROS1_Installation.md)
 ```bash
