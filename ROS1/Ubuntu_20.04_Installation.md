@@ -58,7 +58,7 @@
 
 <img src="Photos/5.jpg" alt="Example Image" width="576" height="432">
 
-- Choose Something else and press continue
+- Locate the free space we created in Windows (Look for the size) and press the `+` button
 
-<img src="Photos/5.jpg" alt="Example Image" width="576" height="432">
+<img src="Photos/6.jpg" alt="Example Image" width="576" height="432">
 
