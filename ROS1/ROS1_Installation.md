@@ -65,8 +65,7 @@ catkin_make
 Edit `~/.bashrc`
 ```bash
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
-echo $ROS_PACKAGE_PATH
-/home/<youruser>/catkin_ws/src:/opt/ros/noetic/share
+echo $ROS_PACKAGE_PATH /home/<youruser>/catkin_ws/src:/opt/ros/noetic/share
 ```
 
 Source `~/.bashrc`
