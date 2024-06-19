@@ -136,9 +136,9 @@ Launch MAVROS from the script by running the following command
 ./mav.sh
 ```
 
-## 4. Launching All Needed Terminals From a Single Script
+## 4. Launching All Needed Terminals From a Single Command
 
-Create a script that launches all needed terminals for autonomous flight
+Create a script that launches all needed terminals for autonomous flight (NOTE you need to create all needed scripts found in [Ardupilot Gazebo Plugin](Ardupilot__Gazebo_Plugin.md) and [QGroundControl Installation](QGroundControl_Installation.md) and the above MAVROS script)
 
 Open gedit to edit `sim.sh`
 ```bash
@@ -156,7 +156,7 @@ gnome-terminal --tab --title="SITL" --command="./sitl.sh"
 gnome-terminal --tab --title="QGroundControl" --command="./qgc.sh"
 sleep 20
 
-gnome-terminal --tab --title="MAV" --command="./mav.sh"
+gnome-terminal --tab --title="MAVROS" --command="./mav.sh"
 ```
 Save the file and close
 
@@ -165,7 +165,7 @@ In the terminal make the script executable
 chmod +x ./sim.sh
 ```
 
-Launch Gazebo, SITL, QGroundCrontol and MAVROS by running a single command (Note that MAVROS terminal launches after a 20 seconds delay as MAVROS requires that the SITL be completely initialized)
+Launch Gazebo, SITL, QGroundCrontol and MAVROS by running a single command (Note that MAVROS terminal launches after a 20 seconds delay as MAVROS requires the SITL to be completely initialized)
 ```bash
 ./sim.sh
 ```
