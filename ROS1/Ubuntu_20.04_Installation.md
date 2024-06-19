@@ -42,3 +42,23 @@
 
 <img src="Photos/1.png" alt="Example Image" width="576" height="432">
 
+- Choose English in both options and press continue
+
+<img src="Photos/2.png" alt="Example Image" width="576" height="432">
+
+- Connect to a WiFi network and press continue
+
+<img src="Photos/3.jpg" alt="Example Image" width="576" height="432">
+
+- Choose Normal Installation and uncheck any other option and press continue
+
+<img src="Photos/4.jpg" alt="Example Image" width="576" height="432">
+
+- Choose Something else and press continue
+
+<img src="Photos/5.jpg" alt="Example Image" width="576" height="432">
+
+- Choose Something else and press continue
+
+<img src="Photos/5.jpg" alt="Example Image" width="576" height="432">
+
