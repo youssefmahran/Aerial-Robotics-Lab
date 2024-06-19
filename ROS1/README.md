@@ -8,5 +8,6 @@
 5. [Installing Ardupilot Gazebo Plugin](Ardupilot_Gazebo_Plugin.md) contains a guide to install Ardupilot Gazebo Plugin
 6. [Adding the Aerial Robotics Lab Environment](Adding_Lab_Environment.md) contains a guide to add the modeled lab to Gazebo
 7. [MAVROS](MAVROS.md) contains a guide to MAVROS
-8. [C++ Script](C++_Scripts.md) contains a guide to write a C++ script to control the drone
-9. [Python Script](Python_Scripts.md) contains a guide to write a python script to control the drone
+8. [C++ Script](C++_Scripts.md) contains a guide to running C++ scripts to control the drone
+9. [Python Script](Python_Scripts.md) contains a guide to running python scripts to control the drone
+10. [Plotting](Plotting.md) contains a guide to plot the drone data
