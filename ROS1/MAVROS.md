@@ -138,7 +138,7 @@ Launch MAVROS from the script by running the following command
 
 ## 4. Launching All Needed Terminals From a Single Command
 
-Create a script that launches all needed terminals for autonomous flight (NOTE you need to create all needed scripts found in [Ardupilot Gazebo Plugin](Ardupilot__Gazebo_Plugin.md) and [QGroundControl Installation](QGroundControl_Installation.md) and the above MAVROS script)
+Create a script that launches all needed terminals for autonomous flight (NOTE you need to create all needed scripts found in [Ardupilot Gazebo Plugin](Ardupilot_Gazebo_Plugin.md) and [QGroundControl Installation](QGroundControl_Installation.md) and the above MAVROS script)
 
 Open gedit to edit `sim.sh`
 ```bash
