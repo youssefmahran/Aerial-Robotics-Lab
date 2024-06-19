@@ -70,7 +70,7 @@ roslaunch apm.launch
 
 Now MAVROS is publishing the topic needed for us to control the quadcopter autonomously from C++ or Python scripts
 
-To see the available topic in a fourth terminal list the topics
+To see the available topics, in a fourth terminal list the topics
 ```bash
 rostopic list
 ```
@@ -134,4 +134,38 @@ chmod +x ./mav.sh
 Launch MAVROS from the script by running the following command
 ```bash
 ./mav.sh
+```
+
+## 4. Launching All Needed Terminals From a Single Script
+
+Create a script that launches all needed terminals for autonomous flight
+
+Open gedit to edit `sim.sh`
+```bash
+cd ~
+gedit ~/sim.sh
+```
+
+In gedit add the following lines
+```
+#!/bin/bash
+gnome-terminal --tab --title="Gazebo" --command="./gaz.sh"
+
+gnome-terminal --tab --title="SITL" --command="./sitl.sh"
+
+gnome-terminal --tab --title="QGroundControl" --command="./qgc.sh"
+sleep 20
+
+gnome-terminal --tab --title="MAV" --command="./mav.sh"
+```
+Save the file and close
+
+In the terminal make the script executable
+```bash
+chmod +x ./sim.sh
+```
+
+Launch Gazebo, SITL, QGroundCrontol and MAVROS by running a single command (Note that MAVROS terminal launches after a 20 seconds delay as MAVROS requires that the SITL be completely initialized)
+```bash
+./sim.sh
 ```
