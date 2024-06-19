@@ -1,8 +1,8 @@
 # Running Python Scripts
 ## 1. Download the Python Scripts
-Download the python scripts found in [Python scripts](Example_Codes/Python)
+Download the python scripts found in [Python Scripts](Example_Codes/Python)
 
-In order to run the C++ script, first run gazebo, SITL and MAVROS either manually or using the simulation script we worte in [MAVROS](MAVROS.md)
+In order to run the python script, first run gazebo, SITL and MAVROS either manually or using the simulation script we worte in [MAVROS](MAVROS.md)
 ```bash
 cd ~
 ./sim.sh
