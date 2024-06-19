@@ -62,6 +62,18 @@ cd ~/catkin_ws
 catkin_make
 ```
 
+Edit `~/.bashrc`
+```bash
+echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
+echo $ROS_PACKAGE_PATH
+/home/<youruser>/catkin_ws/src:/opt/ros/noetic/share
+```
+
+Source `~/.bashrc`
+```bash
+source ~/.bashrc
+```
+
 ## 8. Installing Catkin Dependencies
 Install `mavros` and `mavlink`
 ```bash
@@ -73,16 +85,6 @@ wstool merge -t src /tmp/mavros.rosinstall
 wstool update -t src
 rosdep install --from-paths src --ignore-src --rosdistro `echo $ROS_DISTRO` -y
 catkin_make
-```
-
-Edit `~/.bashrc`
-```bash
-echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
-```
-
-Source `~/.bashrc`
-```bash
-source ~/.bashrc
 ```
 
 Install geographiclib dependancy
