@@ -40,5 +40,5 @@
 
 - Wait for Ubuntu to open then press Install Ubuntu
 
-<img src="Photos/1.png" alt="Example Image" width="1344" height="1008">
+<img src="Photos/1.png" alt="Example Image" width="672" height="504">
 
