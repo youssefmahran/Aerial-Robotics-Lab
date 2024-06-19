@@ -59,7 +59,7 @@ Initialize the catkin workspace
 ```bash
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws
-catkin build
+catkin init
 ```
 
 Edit `~/.bashrc`
