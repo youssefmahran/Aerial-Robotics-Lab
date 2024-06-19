@@ -12,7 +12,7 @@ catkin_create_pkg code std_msgs rospy roscpp
 This will create a `code` folder which contains a `package.xml` and a `CMakeLists.txt`, which have been partially filled out with the information you gave `catkin_create_pkg`. 
 
 ## 2. Building Workspace
-Now you need to build the packages in the catkin workspace: 
+Now you need to build the packages in the catkin workspace  (NOTE `catkin_make` only works in the parent folder of the workspace `~/catkin_ws`) 
 ```bash
 cd ~/catkin_ws
 catkin_make
@@ -85,7 +85,7 @@ Once MAVROS is intitialized make sure the rostopics are being published
 rostopic list
 ```
 
-After the `EK3 is using GPS` message appears run the C++ script
+After the `EK3 is using GPS` message appears in the SITL terminal or its console run the C++ script
 ```bash
 rosrun code circle
 ```

@@ -20,7 +20,7 @@ In another terminal go to the directory where you downloaded your scripts
 cd /path/to/python/scripts
 ```
 
-After the `EK3 is using GPS` message appears run the python script
+After the `EK3 is using GPS` message appears in the SITL terminal or its console run the python script
 ```bash
 python3 circle.py
 ```

@@ -31,18 +31,28 @@ Replace the `iris_arducopter_runway.world` with `Lab.world` in the 3rd line
 ```bash
 gazebo --verbose ~/ardupilot_gazebo/worlds/Lab.world
 ```
+Save `gaz.sh` and close it
 
 In one terminal launch gazebo
 ```bash
 ./gaz.sh
+```
+OR using
+```bash
+gazebo --verbose ~/ardupilot_gazebo/worlds/Lab.world
 ```
 
 In another terminal launch the ArduPilot SITL
 ```bash
 ./sitl.sh
 ```
+OR using
+```bash
+cd ~/ardupilot/ArduCopter/
+sim_vehicle.py -v ArduCopter -f gazebo-iris --console
+```
 
-In the SITL terminal (Terminal 2) wait for the `EK3 is using GPS1` message then run
+Wait for the `EK3 is using GPS1` message to appear in the SITL terminal or its console then run
 ```
 mode GUIDED
 arm throttle
