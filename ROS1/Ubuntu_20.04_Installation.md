@@ -58,7 +58,7 @@
 
 <img src="Photos/5.jpg" alt="Example Image" width="576" height="432">
 
-- Locate the free space we created in Windows (Look for the size) and press the `+` button
+- Locate the free space we created in Windows (Look for the size) and press the `+` button to create different partitions
 
 <img src="Photos/6.jpg" alt="Example Image" width="576" height="432">
 
@@ -66,3 +66,35 @@
 
 <img src="Photos/7.jpg" alt="Example Image" width="576" height="432">
 
+- Create a root folder as a logical partition at the beginning of this space and mount point `/` as shown. The recommended root folder size is 30GB (30720MB)
+
+<img src="Photos/8.jpg" alt="Example Image" width="576" height="432">
+
+- Allocate the remaining space for the home folder as a logical partition at the beginning of this space and mount point `/` as shown.
+
+<img src="Photos/9.jpg" alt="Example Image" width="576" height="432">
+
+- You should have the partitions as shown. Choose your hard drive as the boot loader installation device and press install now
+
+<img src="Photos/10.jpg" alt="Example Image" width="576" height="432">
+
+- Choose your country and press continue
+
+<img src="Photos/11.jpg" alt="Example Image" width="576" height="432">
+
+- Finally fill out your info and press continue
+
+<img src="Photos/12.jpg" alt="Example Image" width="576" height="432">
+
+- When the installation finishes press restart
+
+## 3. After Installation
+Boot into Ubuntu and open a new terminal using `CTRL` + `ALT` + `T` or from the applications pane and execute the following commands. You will be asked to enter your password
+```bash
+sudo apt update && sudo apt upgrade -y
+```
+
+In order to play media files like MP#, MPEG4, AVI etc, you’ll need to install media codecs. Ubuntu has them in their repository but doesn’t install it by default because of copyright issues in various countries
+```bash
+sudo apt install ubuntu-restricted-extras
+```
