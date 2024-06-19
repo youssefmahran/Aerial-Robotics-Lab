@@ -106,6 +106,7 @@ rosrun <package name> <executable name>
 ```
 The `<package name>` is `code` as we created in the first step while the `<executable name>` is the name of the executable you set in the previous step.
 
+
 ## 6. Writing Your Own Scripts
 In the [C++ scripts](Example_Codes/C++) folder you will find 3 scripts fully written with line-by-line explanation for each line
 
