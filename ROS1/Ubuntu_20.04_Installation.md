@@ -70,7 +70,7 @@
 
 <img src="Photos/8.jpg" alt="Example Image" width="576" height="432">
 
-- Allocate the remaining space for the home folder as a logical partition at the beginning of this space and mount point `/` as shown.
+- Allocate the remaining space for the home folder as a logical partition at the beginning of this space and mount point `/home` as shown.
 
 <img src="Photos/9.jpg" alt="Example Image" width="576" height="432">
 
