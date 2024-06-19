@@ -4,8 +4,8 @@ Download the [`Lab.zip`](Lab.zip) File
 
 Open a new terminal using `CTRL` + `ALT` + `T` or from the applications pane and run this command
 ```bash
-cd ~
 sudo apt install unzip
+cd ~/Downloads
 unzip Lab.zip -d ~/Downloads
 ```
 
