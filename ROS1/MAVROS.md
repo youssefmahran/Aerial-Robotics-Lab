@@ -2,12 +2,13 @@
 ## 1. Installing MAVROS and MAVLink
 Install `mavros`
 ```bash
-sudo apt install ros-noetic-mavros ros-noetic-mavros-extras
+sudo apt install ros-noetic-mavros ros-noetic-mavros-extras ros-noetic-mavros-msgs
 ```
 
 Install geographiclib dependancy
 ```bash
-sudo /opt/ros/noetic/lib/mavros/install_geographiclib_datasets.sh
+wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
+sudo bash ./install_geographiclib_datasets.sh
 ```
 
 Install `mavlink`
