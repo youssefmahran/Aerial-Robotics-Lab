@@ -18,3 +18,36 @@
 - Open Disk Management in Windows and locate the partition you want to shrink
 
 <img src="Photos/pic3.png" alt="Example Image" width="378" height="298">
+
+- Write click on the partition and select Shrink Volume
+
+<img src="Photos/pic4.png" alt="Example Image" width="378" height="328">
+
+- Choose the amount of free space you want and press shrink (Recommended at least 100GB which is 102400MB)
+
+<img src="Photos/pic5.png" alt="Example Image" width="226" height="153">
+
+- You can see the unallocated space for Ubuntu
+
+<img src="Photos/pic6.png" alt="Example Image" width="377" height="298">
+
+## 2. Installing Ubuntu
+- Restart the computer and enter the boot menu by repeatedly pressing `F12` on Lenovo and DELL Laptops and `F9` on HP Laptops
+
+- Select your USB device as a boot device
+
+- When Ubunutu loads the 
+
+<img src="Photos/pic3.png" alt="Example Image" width="378" height="298">
+
+- Write click on the partition and select Shrink Volume
+
+<img src="Photos/pic4.png" alt="Example Image" width="378" height="328">
+
+- Choose the amount of free space you want and press shrink (Recommended at least 100GB which is 102400MB)
+
+<img src="Photos/pic5.png" alt="Example Image" width="226" height="153">
+
+- You can see the unallocated space for Ubuntu
+
+<img src="Photos/pic6.png" alt="Example Image" width="377" height="298">

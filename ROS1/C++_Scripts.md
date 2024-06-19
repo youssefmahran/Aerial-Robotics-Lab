@@ -2,7 +2,7 @@
 ## 1. Creating a catkin Package
 Open a new terminal using `CTRL` + `ALT` + `T` or from the applications pane and go to the catkin workspace created in [ROS Installation](ROS1_Installation.md)
 ```bash
-cd ~/catkin_ws
+cd ~/catkin_ws/src
 ```
 Use the `catkin_create_pkg` script to create a new package called `code` which depends on `std_msgs`, `roscpp`, and `rospy`: 
 ```bash
