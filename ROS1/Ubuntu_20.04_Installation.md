@@ -36,18 +36,9 @@
 
 - Select your USB device as a boot device
 
-- When Ubunutu loads the 
+- When Ubunutu loads choose `Ubuntu` Option
 
-<img src="Photos/pic3.png" alt="Example Image" width="378" height="298">
+- Wait for Ubuntu to open then press Install Ubuntu
 
-- Write click on the partition and select Shrink Volume
+<img src="Photos/1.png" alt="Example Image" width="1344" height="1008">
 
-<img src="Photos/pic4.png" alt="Example Image" width="378" height="328">
-
-- Choose the amount of free space you want and press shrink (Recommended at least 100GB which is 102400MB)
-
-<img src="Photos/pic5.png" alt="Example Image" width="226" height="153">
-
-- You can see the unallocated space for Ubuntu
-
-<img src="Photos/pic6.png" alt="Example Image" width="377" height="298">
