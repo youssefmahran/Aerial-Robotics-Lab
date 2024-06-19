@@ -65,11 +65,11 @@
 
 - Create a swap area as a logical partition at the beginning of this space as shown. The swap size is at least half the RAM size and at most double the RAM size. So for an 8GB RAM the minimum is 4GB and maximum is 16GB 
 
-<img src="Photos/7.jpg" alt="Example Image" width="576" height="432">
+<img src="Photos/8.jpg" alt="Example Image" width="576" height="432">
 
 - Create a root folder as a logical partition at the beginning of this space and mount point `/` as shown. The recommended root folder size is 30GB (30720MB)
 
-<img src="Photos/8.jpg" alt="Example Image" width="576" height="432">
+<img src="Photos/7.jpg" alt="Example Image" width="576" height="432">
 
 - Allocate the remaining space for the home folder as a logical partition at the beginning of this space and mount point `/home` as shown.
 
