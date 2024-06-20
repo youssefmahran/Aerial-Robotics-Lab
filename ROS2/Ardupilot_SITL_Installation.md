@@ -23,12 +23,7 @@ Install the needed dependencies
 cd ardupilot
 Tools/environment_install/install-prereqs-ubuntu.sh -y
 ```
-Log out and Log in again for changes to take place
-
-Use pip (python package installer) to install mavproxy
-```bash
-sudo pip install future pymavlink MAVProxy
-```
+Log out and Log in again for changes to take effect
 
 ## 4. Running the SITL
 Run the SITL (Software In The Loop) once to set params:
