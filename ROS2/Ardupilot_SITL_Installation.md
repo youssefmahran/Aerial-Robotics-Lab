@@ -26,7 +26,7 @@ Tools/environment_install/install-prereqs-ubuntu.sh -y
 Log out from Ubuntu and Log in again for changes to take effect
 
 ## 4. Running the SITL
-Run the SITL (Software In The Loop) once to set params:
+Run the SITL (Software In The Loop) once to set parameters:
 ```bash
 cd ~/ardupilot/ArduCopter
 sim_vehicle.py -w
