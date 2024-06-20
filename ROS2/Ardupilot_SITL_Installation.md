@@ -23,7 +23,7 @@ Install the needed dependencies
 cd ardupilot
 Tools/environment_install/install-prereqs-ubuntu.sh -y
 ```
-Log out and Log in again for changes to take effect
+Log out from Ubuntu and Log in again for changes to take effect
 
 ## 4. Running the SITL
 Run the SITL (Software In The Loop) once to set params:
