@@ -20,33 +20,14 @@ git submodule update --init --recursive
 ## Install the Dependencies
 Install the needed dependencies
 ```bash
-sudo apt install python3-matplotlib python3-serial python-wxgtk3.0 python-wxtools python3-lxml python3-scipy python3-opencv ccache gawk python3-pip python3-pexpect python-is-python3
+cd ardupilot
+Tools/environment_install/install-prereqs-ubuntu.sh -y
+sudo install python-is-python3
 ```
 
-
-Use pip (python package installer) to install mavproxy
+Reload the path (log-out and log-in to make it permanent):
 ```bash
-sudo pip install future pymavlink MAVProxy
-```
-
-## Edit bashrc
-Open `~/.bashrc` to edit it
-```bash
-gedit ~/.bashrc
-```
-
-
-Add the following lines at the end of the `~/.bashrc` file
-```
-export PATH=$PATH:$HOME/ardupilot/Tools/autotest
-export PATH=/usr/lib/ccache:$PATH
-```
-Save and close the editor
-
-
-Source `~/.bashrc` by running this in the terminal
-```bash
-.~/.bashrc
+. ~/.profile
 ```
 
 ## Running the SITL
