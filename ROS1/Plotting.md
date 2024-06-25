@@ -15,7 +15,7 @@ rostopic list
 
 Record a MAVROS topic using the following command in a new terminal
 ```bash
-rosbag record -O <output filename>.bag </mavros/topic1> <</mavros/topic2>
+rosbag record -O <output filename>.bag </mavros/topic1> </mavros/topic2>
 ```
 
 For this tutorial we want to record the current position of the drone and the setpoints published to the drone to make a desired vs actual trajectory plot
