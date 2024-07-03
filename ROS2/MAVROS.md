@@ -18,7 +18,7 @@ cd mavlink
 python3 -m pip install -r pymavlink/requirements.txt
 ```
 
-## 2. Creating apm.launch File
+## 2. Creating apm.xml File
 Open a new terminal using `CTRL` + `ALT` + `T` or from the applications pane and create a launch folder
 ```bash
 cd ~
@@ -28,7 +28,7 @@ mkdir ~/launch
 Edit `apm.launch` file
 ```bash
 cd ~/launch
-gedit apm.launch
+gedit apm.xml
 ```
 
 In gedit add the following
@@ -84,7 +84,7 @@ sim_vehicle.py -v ArduCopter -f gazebo-iris --console
 Wait for the SITL to initialize then in a third terminal launch apm.launch
 ```bash
 cd ~/launch
-roslaunch apm.launch
+ros2 launch apm.xml
 ```
 
 Now MAVROS is publishing the topics needed for us to control the quadcopter autonomously from C++ or Python scripts
