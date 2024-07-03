@@ -2,7 +2,7 @@
 ## 1. Make Sure Gazebo is Installed
 Open a new terminal using `CTRL` + `ALT` + `T` or from the applications pane and run the following command
 ```bash
-sudo apt install ros-noetic-gazebo-ros ros-noetic-gazebo-plugins
+sudo apt install ros-humble-gazebo-ros ros-humble-gazebo-plugins
 ```
 
 ## 2. Install Gazebo Plugin for ArduPilot Master
