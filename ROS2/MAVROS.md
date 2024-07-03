@@ -2,7 +2,7 @@
 ## 1. Installing MAVROS and MAVLink
 Install `mavros`
 ```bash
-sudo apt install ros-noetic-mavros ros-noetic-mavros-extras ros-noetic-mavros-msgs
+sudo apt install ros-humble-mavros ros-humble-mavros-extras ros-humble-mavros-msgs
 ```
 
 Install geographiclib dependancy
