@@ -11,13 +11,6 @@ wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/inst
 sudo bash ./install_geographiclib_datasets.sh
 ```
 
-Install `mavlink`
-```bash
-git clone https://github.com/mavlink/mavlink.git --recursive
-cd mavlink
-python3 -m pip install -r pymavlink/requirements.txt
-```
-
 ## 2. Creating apm.launch File
 Open a new terminal using `CTRL` + `ALT` + `T` or from the applications pane and create a launch folder
 ```bash
